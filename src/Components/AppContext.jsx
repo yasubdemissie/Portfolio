@@ -15,8 +15,7 @@ function AppContext({ children }) {
 
   useEffect(() => {
     const element = document.body;
-    let styles = element.classList.contains("dark-theme");
-    if (styles) {
+    if (theme === "dark-theme") {
       element.classList.add("light-theme");
       element.classList.remove("dark-theme");
     } else {
