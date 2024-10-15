@@ -1,15 +1,23 @@
-import { useLocation } from "react-router-dom";
+import propType from 'prop-types';
 
-function NavButton({ children, onClick, activeButton, title }) {
+function NavButton({ children, onClick, activeButton, title, contactType }) {
   const style = `transition duration-700 hover:animate-spin hover:scale-125 rounded-full p-3 ${
     activeButton ? "bg-yellow-400 text-gray-700" : " bg-gray-700 "
-  }`;
+  } ${contactType === "contact" ? "text-gray-100" : ""}`;
 
   return (
-    <button title={title}  className={style} onClick={onClick}>
+    <button title={title} className={style} onClick={onClick}>
       {children}
     </button>
   );
 }
+
+NavButton.propTypes = {
+  children: propType.node,
+  onClick: propType.func,
+  activeButton: propType.bool,
+  title: propType.string,
+  contactType: propType.string,
+};
 
 export default NavButton;

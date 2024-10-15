@@ -4,6 +4,7 @@ import styled from "styled-components";
 import NavElement from "./NavElement";
 import { useProvider } from "../Hooks/useProvider";
 import { HiMoon, HiSun } from "react-icons/hi2";
+import { ToastContainer } from "react-toast";
 
 const StyledContainer = styled.div`
   display: grid;
@@ -21,6 +22,7 @@ function Container() {
         <Button>{theme === "dark-theme" ? <HiSun /> : <HiMoon />}</Button>
         <NavElement />
       </div>
+      <ToastContainer position="top-right" autoClose={3} theme="light" />
     </StyledContainer>
   );
 }

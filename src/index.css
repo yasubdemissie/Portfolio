@@ -24,6 +24,7 @@
 body {
   background-color: var(--bg-color);
   min-height: 100dvh;
+  overflow-y: hidden;
   color: var(--text-color);
 
   transition: background-color 0.7s ease, color 0.4s ease-in-out;
