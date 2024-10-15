@@ -1,10 +1,12 @@
-import Button from "../Ui/other/Button";
+import HomeDescription from "../Components/HomeDescription";
+import HomeImage from "../Components/HomeImage";
+
 
 function Home() {
   return (
-    <div className="bg-slate-700 flex justify-between">
-      <h1 className="mx-auto text-green-300">Home</h1>
-      <Button>Theme</Button>
+    <div className="flex justify-center items-center">
+      <HomeImage />
+      <HomeDescription />
     </div>
   );
 }

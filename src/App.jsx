@@ -12,20 +12,20 @@ import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog";
 
 // Components
-import Container from "postcss";
+import Container from "./Components/Container";
 
 function App() {
   return (
     <AppContext>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<Container />}> */}
-            <Route index element={<Home />} />
+          <Route element={<Container />}>
+            <Route index path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portifolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/about" element={<About />} />
-          {/* </Route> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </AppContext>
