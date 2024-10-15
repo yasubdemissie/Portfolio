@@ -1,7 +1,10 @@
 import { HiArrowRight } from "react-icons/hi2";
 import NavButton from "../Ui/other/NavButton";
+import { useNavigate } from "react-router-dom";
 
 function HomeDescription() {
+  const navigate = useNavigate();
+
   return (
     <div className="w-1/2 px-5 space-y-8">
       <div className="text-4xl italic font-bold">
@@ -17,8 +20,9 @@ function HomeDescription() {
         Believe one day I will return the favor,
       </p>
       <div className="py-0 pl-3 pr-0 border-[1px] w-fit rounded-full border-yellow-400">
-        more about me{" "}
-        <NavButton activeButton={true}>
+        <span className="mx-1">More about me</span>
+
+        <NavButton activeButton={true} onClick={() => navigate("/about")}>
           <HiArrowRight />
         </NavButton>
       </div>

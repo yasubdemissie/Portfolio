@@ -5,8 +5,8 @@ function HomeImage() {
 
     const { theme } = useProvider();
     const images = {
-      "dark-theme": "./public/yasub.jpg",
-      "light-theme": "./public/yasubBlack.jpg",
+      "light-theme": "/yasubBlack.jpg",
+      "dark-theme": "/yasub.jpg",
     };
     const [src, setSrc] = useState(() => images[theme]);
   
