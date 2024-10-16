@@ -12,14 +12,13 @@ const StyledContainer = styled.div`
 `;
 
 function Container() {
-
-  const {  theme } = useProvider();
+  const { theme } = useProvider();
 
   return (
     <StyledContainer>
       <Outlet />
       <div>
-        <Button>{theme === "dark-theme" ? <HiSun /> : <HiMoon />}</Button>
+        <Button>{theme === "dark-theme" ? <HiMoon /> : <HiSun />}</Button>
         <NavElement />
       </div>
       <ToastContainer position="top-right" autoClose={3} theme="light" />

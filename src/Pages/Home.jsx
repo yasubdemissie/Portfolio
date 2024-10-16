@@ -4,7 +4,7 @@ import HomeImage from "../Components/HomeImage";
 
 function Home() {
   return (
-    <div className="flex justify-center items-center">
+    <div className="personal_css flex justify-center items-center">
       <HomeImage />
       <HomeDescription />
     </div>
