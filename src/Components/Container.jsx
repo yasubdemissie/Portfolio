@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toast";
 const StyledContainer = styled.div`
   display: grid;
   grid-template: 100dvh / auto 100px;
-  overflow: ${props => props.path === "/portfolio" ? "auto" : "hidden"};
+  overflow: ${props => props.path === "/about" ? "auto" : "hidden"};
 `;
 
 function Container() {

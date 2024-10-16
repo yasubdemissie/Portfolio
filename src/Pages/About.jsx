@@ -1,9 +1,11 @@
+import SoftSkils from "../Components/SoftSkils";
+import TechnicalSkill from "../Components/TechnicalSkill";
+
 function About() {
-  return (
-    <div className="personal_css flex justify-between">
-      <h1 className="mx-auto text-green-300">About</h1>
-    </div>
-  );
+  return <div className="grid">
+    <TechnicalSkill />
+    <SoftSkils />
+  </div>;
 }
 
 export default About;

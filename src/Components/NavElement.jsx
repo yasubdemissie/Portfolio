@@ -1,28 +1,32 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import NavButton from "../Ui/other/NavButton";
-import { HiBookOpen, HiHome, HiPhone, HiTv, HiUser } from "react-icons/hi2";
+import { HiHome, HiPhone, HiUser } from "react-icons/hi2";
+import { FaBriefcase } from "react-icons/fa6";
+import { FiTv } from "react-icons/fi";
+
+const pages = [
+  { title: "Home", link: "/", icon: <HiHome /> },
+  { title: "About", link: "/about", icon: <HiUser /> },
+  { title: "Portfolio", link: "/portfolio", icon: <FaBriefcase /> },
+  { title: "Blog", link: "/blog", icon: <FiTv /> },
+  { title: "Contact", link: "/contact", icon: <HiPhone /> },
+];
 
 function NavElement() {
-
-    const el = useLocation();
-    const navigate = useNavigate();
+  const el = useLocation();
+  const navigate = useNavigate();
   return (
     <div className="h-full flex flex-col gap-10 justify-center items-center text-gray-300 font-bold">
-      <NavButton title={"Home"} activeButton={el.pathname === "/"} onClick={() => navigate('/')}>
-        <HiHome />
-      </NavButton>
-      <NavButton title={"Contact"} activeButton={el.pathname === "/contact"} onClick={() => navigate('/contact')}>
-        <HiPhone />
-      </NavButton>
-      <NavButton title={"Works"} activeButton={el.pathname === "/portfolio"} onClick={() => navigate('/portfolio')}>
-        <HiBookOpen />
-      </NavButton>
-      <NavButton title={"Blog"} activeButton={el.pathname === "/blog"} onClick={() => navigate('/blog')}>
-        <HiTv />
-      </NavButton>
-      <NavButton title={"About"} activeButton={el.pathname === "/about"} onClick={() => navigate('/about')}>
-        <HiUser />
-      </NavButton>
+      {pages.map((page) => (
+        <NavButton
+          key={page.title}
+          title={page.title}
+          activeButton={el.pathname === page.link}
+          onClick={() => navigate(page.link)}
+        >
+          {page.icon}
+        </NavButton>
+      ))}
     </div>
   );
 }
