@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Button from "../Ui/other/Button";
 import styled from "styled-components";
 import NavElement from "./NavElement";
@@ -9,13 +9,15 @@ import { ToastContainer } from "react-toast";
 const StyledContainer = styled.div`
   display: grid;
   grid-template: 100dvh / auto 100px;
+  overflow: ${props => props.path === "/portfolio" ? "auto" : "hidden"};
 `;
 
 function Container() {
   const { theme } = useProvider();
+  const location = useLocation();
 
   return (
-    <StyledContainer>
+    <StyledContainer path={location.pathname}>
       <Outlet />
       <div>
         <Button>{theme === "dark-theme" ? <HiMoon /> : <HiSun />}</Button>

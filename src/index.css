@@ -12,7 +12,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--text-color);
   background-color: var(--bg-color);
 
   font-synthesis: none;
@@ -24,7 +24,7 @@
 body {
   background-color: var(--bg-color);
   min-height: 100dvh;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   color: var(--text-color);
 
   transition: background-color 0.7s ease, color 0.4s ease-in-out;
@@ -38,6 +38,11 @@ body {
   --bg-color: #fff7f7;
   --text-color: #000000;
 }
+
+/* .personal_css {
+  height: 100dvh;
+  overflow-y: hidden;
+} */
 
 @tailwind base;
 @tailwind components;
