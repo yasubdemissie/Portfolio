@@ -2,13 +2,13 @@ import { useLocation, useNavigate } from "react-router-dom";
 import NavButton from "../Ui/other/NavButton";
 import { HiHome, HiPhone, HiUser } from "react-icons/hi2";
 import { FaBriefcase } from "react-icons/fa6";
-import { FiTv } from "react-icons/fi";
+// import { FiTv } from "react-icons/fi";
 
 const pages = [
   { title: "Home", link: "/", icon: <HiHome /> },
   { title: "About", link: "/about", icon: <HiUser /> },
   { title: "Portfolio", link: "/portfolio", icon: <FaBriefcase /> },
-  { title: "Blog", link: "/blog", icon: <FiTv /> },
+  // { title: "Blog", link: "/blog", icon: <FiTv /> },
   { title: "Contact", link: "/contact", icon: <HiPhone /> },
 ];
 
