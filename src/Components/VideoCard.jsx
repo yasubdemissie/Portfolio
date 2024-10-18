@@ -3,7 +3,7 @@ import propType from "prop-types";
 function VideoCard({ children }) {
   return (
     <div className="grid grid-rows-8 rounded-2xl overflow-hidden h-fit">
-      <div className="bg-red-600/5 row-span-5 min-h-[315px] h-fit">
+      <div className="bg-red-600/5 row-span-3 min-h-[315px] h-fit">
         {children}
       </div>
       <div className="bg-blue-600/5 row-span-3 h-fit">

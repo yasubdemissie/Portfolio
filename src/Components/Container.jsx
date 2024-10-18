@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Button from "../Ui/other/Button";
+import Button from "../Ui/Button";
 import styled from "styled-components";
 import NavElement from "./NavElement";
 import { useProvider } from "../Hooks/useProvider";

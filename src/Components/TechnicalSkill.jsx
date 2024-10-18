@@ -1,4 +1,4 @@
-import Progress from "../Ui/other/Progress";
+import Progress from "../Ui/Progress";
 
 const techinalSkills = [
   { name: "JavaScript", percent: 90 },

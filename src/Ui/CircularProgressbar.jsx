@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useProvider } from "../../Hooks/useProvider";
+import { useProvider } from "../Hooks/useProvider";
 
 const StyledProgressbar = styled.div`
   position: relative;

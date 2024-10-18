@@ -2,7 +2,7 @@ import VideoCard from "../Components/VideoCard";
 
 function Portifolio() {
   return (
-    <div className="grid grid-cols-3 gap-x-32 gap-y-14 mt-16 mx-24 h-fit ">
+    <div className="grid grid-cols-3 gap-x-10 gap-y-0 mt-16 mx-24 h-fit ">
       <VideoCard>
         <iframe
           className="w-full"
@@ -60,8 +60,8 @@ function Portifolio() {
       </VideoCard>
       <VideoCard>
         <iframe
-          className="w-full"
-          height="315"
+          className="w-full h-full"
+          // height="315"
           src="https://www.youtube.com/embed/HzPvL0SNaFc?si=CZ_VvipnkGkoW2Zq"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

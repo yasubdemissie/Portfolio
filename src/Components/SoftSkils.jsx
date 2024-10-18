@@ -1,4 +1,4 @@
-import SkillCard from "../Ui/other/SkillCard";
+import SkillCard from "../Ui/SkillCard";
 import { SiMinds } from "react-icons/si";
 import { FaPeopleCarryBox, FaPeopleGroup } from "react-icons/fa6";
 import {
@@ -49,7 +49,7 @@ function SoftSkils() {
         Soft Skills
       </h1>
 
-      <div className="grid grid-cols-2 gap-4 mb-10 mx-40">
+      <div className="grid grid-cols-2 gap-4 mb-10 mx-24">
         {softSkills.map((item) => (
           <SkillCard key={item.name}>
             <SkillCard.Icon>{item.icon}</SkillCard.Icon>

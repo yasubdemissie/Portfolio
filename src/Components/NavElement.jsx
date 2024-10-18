@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import NavButton from "../Ui/other/NavButton";
+import NavButton from "../Ui/NavButton";
 import { HiHome, HiPhone, HiUser } from "react-icons/hi2";
 import { FaBriefcase } from "react-icons/fa6";
 // import { FiTv } from "react-icons/fi";

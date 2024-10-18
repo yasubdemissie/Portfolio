@@ -1,4 +1,4 @@
-import { useProvider } from "../../Hooks/useProvider";
+import { useProvider } from "../Hooks/useProvider";
 
 function Button({ children }) {
   const { changeTheme } = useProvider();
