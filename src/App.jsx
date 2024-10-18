@@ -13,6 +13,7 @@ import Blog from "./Pages/Blog";
 
 // Components
 import Container from "./Components/Container";
+import ErrorPage from "./Pages/ErrorPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
