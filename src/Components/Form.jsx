@@ -62,7 +62,7 @@ function Form() {
         name="message"
         {...register("message", { required: true })}
       />
-      <div className="row-span-1 border-yellow-500 border-[1px] w-fit h-fit pl-2 rounded-full italic">
+      <div className="row-span-1 border-yellow-500 border-[1px] w-fit h-fit pl-2 rounded-full italic mb-3">
         <span className="mx-2">Send email </span>
         <button
           className="rounded-full bg-yellow-400 text-black p-3 text-md"

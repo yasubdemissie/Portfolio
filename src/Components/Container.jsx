@@ -9,7 +9,15 @@ import { ToastContainer } from "react-toast";
 const StyledContainer = styled.div`
   display: grid;
   grid-template: 100dvh / auto 100px;
-  overflow: ${props => props.path === "/about" || props.path === "/portfolio" ? "auto" : "hidden"};
+  overflow: ${(props) =>
+    props.path === "/about" || props.path === "/portfolio" ? "auto" : "hidden"};
+`;
+
+const StyledNavbar = styled.div`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 2em;
 `;
 
 function Container() {
@@ -19,10 +27,10 @@ function Container() {
   return (
     <StyledContainer path={location.pathname}>
       <Outlet />
-      <div>
+      <StyledNavbar>
         <Button>{theme === "dark-theme" ? <HiMoon /> : <HiSun />}</Button>
         <NavElement />
-      </div>
+      </StyledNavbar>
       <ToastContainer position="top-right" autoClose={3} theme="light" />
     </StyledContainer>
   );
