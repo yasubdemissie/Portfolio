@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaInstagram, FaTelegram } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
 import NavButton from "./NavButton";
 import { useNavigate } from "react-router-dom";
+import { HiX } from "react-icons/hi";
 
 const social = [
   {
@@ -16,7 +16,7 @@ const social = [
   },
   {
     name: "Twitter/ X",
-    icon: <FaX />,
+    icon: <HiX />,
     link: "https://t.me/yas777dam",
   },
   {
@@ -36,7 +36,7 @@ function Social() {
   const navigate = useNavigate();
 
   return (
-    <div className="row-span-1 flex justify-center py-2 gap-1">
+    <div className="row-span-1 flex justify-center gap-x-2">
       {social.map((item) => (
         <NavButton
           key={item.name}

@@ -32,32 +32,32 @@ function Form() {
     <form
       ref={form}
       onSubmit={handleSubmit(submitForm)}
-      className="bg-slate-500/0 col-span-2 rounded-lg grid grid-rows-7 grid-cols-2 gap-8"
+      className="bg-slate-500/0 col-span-2 rounded-lg grid grid-rows-5 grid-cols-2 gap-x-4 gap-y-10 h-fit"
     >
       <input
         type="text"
-        className="bg-slate-500/10 h-16 outline-0 rounded-full px-10 text-xl"
+        className="bg-slate-500/10 h-16 outline-0 rounded-full px-10 text-md italic"
         placeholder="Your name"
         name="user_name"
         {...register("user_name", { required: true })}
       />
       <input
         type="text"
-        className="bg-slate-500/10 h-16 outline-0 rounded-full px-10 text-xl"
+        className="bg-slate-500/10 h-16 outline-0 rounded-full px-10 text-md"
         placeholder="Your email"
         name="user_email"
         {...register("user_email", { required: true })}
       />
       <input
         type="text"
-        className="bg-slate-500/10 h-16 outline-0 col-span-2 rounded-full px-10 text-xl"
+        className="bg-slate-500/10 h-16 outline-0 col-span-2 rounded-full px-10 text-md"
         placeholder="Subject"
         name="subject"
         {...register("subject", { required: true })}
       />
       <textarea
         type="text"
-        className="bg-slate-500/10 outline-0 row-span-4 col-span-2 rounded-xl px-10 py-10 text-xl"
+        className="bg-slate-500/10 outline-0 row-span-3 col-span-2 rounded-xl px-10 py-10 text-md"
         placeholder="Message"
         name="message"
         {...register("message", { required: true })}
@@ -65,7 +65,7 @@ function Form() {
       <div className="row-span-1 border-yellow-500 border-[1px] w-fit h-fit pl-2 rounded-full italic">
         <span className="mx-2">Send email </span>
         <button
-          className="rounded-full bg-yellow-400 text-black p-3 text-xl"
+          className="rounded-full bg-yellow-400 text-black p-3 text-md"
           type="submit"
         >
           <MdSend />
