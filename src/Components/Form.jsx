@@ -32,7 +32,7 @@ function Form() {
     <form
       ref={form}
       onSubmit={handleSubmit(submitForm)}
-      className="bg-slate-500/0 col-span-2 rounded-lg grid grid-rows-5 grid-cols-2 gap-x-4 gap-y-10 h-fit"
+      className="col-span-2 rounded-lg grid grid-rows-5 grid-cols-2 gap-x-4 gap-y-4 h-fit"
     >
       <input
         type="text"

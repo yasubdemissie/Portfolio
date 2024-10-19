@@ -5,6 +5,7 @@ import NavElement from "./NavElement";
 import { useProvider } from "../Hooks/useProvider";
 import { HiMoon, HiSun } from "react-icons/hi2";
 import { ToastContainer } from "react-toast";
+import Logo from "./Logo";
 
 const StyledContainer = styled.div`
   display: grid;
@@ -27,6 +28,7 @@ function Container() {
 
   return (
     <StyledContainer path={location.pathname}>
+      <Logo />
       <Outlet />
       <StyledNavbar>
         <Button>{theme === "dark-theme" ? <HiMoon /> : <HiSun />}</Button>
