@@ -8,6 +8,7 @@ import { useProvider } from "../Hooks/useProvider";
 
 const StyledNavbar = styled.nav`
   position: absolute;
+  display: inline-block;
   z-index: 100;
   top: 10px;
   bottom: 0;

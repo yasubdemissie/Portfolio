@@ -1,8 +1,8 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import styled from "styled-components";
-import { ToastContainer } from "react-toast";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
+import { Toaster } from "react-hot-toast";
 
 const StyledContainer = styled.div`
   display: grid;
@@ -16,7 +16,7 @@ function Container() {
       <Logo />
       <Outlet />
       <NavBar />
-      <ToastContainer position="top-right" autoClose={3} theme="light" />
+      <Toaster position="top right"/>
     </StyledContainer>
   );
 }

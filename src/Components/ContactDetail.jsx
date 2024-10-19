@@ -5,7 +5,7 @@ import DetailHeader from "../Ui/DetailHeader";
 function ContactDetail() {
 
   return (
-    <div className="m-1 rounded-lg grid grid-cols-1 grid-rows-11">
+    <div className="rounded-lg flex lg:grid flex-wrap m-0 lg:col-span-1 w-dvw  lg:grid-cols-1 grid-rows-auto lg:grid-rows-5">
       <DetailHeader />
       <MoreContact />
       <Social />
