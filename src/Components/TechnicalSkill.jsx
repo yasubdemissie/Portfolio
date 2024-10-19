@@ -17,7 +17,7 @@ function TechnicalSkill() {
       <h1 className="mx-auto my-10 text-yellow-500 text-5xl mt-24 font-extrabold capitalize">
         Technical Skills
       </h1>
-      <div className="grid gap-9 grid-cols-4 pl-48">
+      <div className=" grid grid-cols-2 gap-9 md:grid-cols-3 lg:grid-cols-4 px-3em lg:pl-48">
         {techinalSkills.map((item) => (
           <Progress key={item.name} name={item.name} value={item.percent} />
         ))}

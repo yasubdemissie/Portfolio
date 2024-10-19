@@ -13,9 +13,9 @@ function HomeImage() {
     useEffect(() => setSrc(images[theme]), [theme]);
 
   return (
-    <div className=" m-auto rounded-lg overflow-hidden 
-    border-r-transparent border-t-transparent h-[500px] w-[500px]
-     border-l-yellow-600 border-b-yellow-600 border-[30px] p-0
+    <div className=" h-[20em] w-[20rem] m-auto rounded-lg overflow-hidden 
+    border-r-transparent border-t-transparent lg:h-[500px] lg:w-[500px]
+     border-l-yellow-600 border-b-yellow-600 border-[1em] p-0
      ">
       <img
         height={500}

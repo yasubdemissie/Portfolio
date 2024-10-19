@@ -2,7 +2,7 @@ import logo from "../assets/yasLogo.webm";
 
 function Logo() {
   return (
-    <div className="mt-0 absolute top-0 left-0 rounded-full border-none">
+    <div className="mt-0 absolute top-0 left-0 rounded-full border-none z-10">
       <video
         autoPlay
         // loop
