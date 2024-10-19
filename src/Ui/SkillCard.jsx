@@ -13,9 +13,9 @@ function Icon({ children }) {
 
 function Explanation({ children, title }) {
   return (
-    <div className="col-span-8 italic font-sans text-md mx-10 my-auto">
+    <div className="col-span-8 italic font-sans text-sm  lg:text-md lg:mx-10 my-auto">
       <h2 className="mb-8">{title}</h2>
-      <div className="m-0 font-extralight">{children}</div>
+      <div className="m-0 w-full font-extralight">{children}</div>
     </div>
   );
 }

@@ -49,7 +49,7 @@ function SoftSkils() {
         Soft Skills
       </h1>
 
-      <div className="grid grid-cols-2 gap-4 mb-10 mx-24">
+      <div className="grid lg:grid-cols-2 gap-1 lg:gap-4 mb-10 lg:mx-24">
         {softSkills.map((item) => (
           <SkillCard key={item.name}>
             <SkillCard.Icon>{item.icon}</SkillCard.Icon>

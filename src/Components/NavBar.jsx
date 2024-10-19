@@ -7,7 +7,8 @@ import { HiMoon, HiSun } from "react-icons/hi2";
 import { useProvider } from "../Hooks/useProvider";
 
 const StyledNavbar = styled.nav`
-  position: fixed;
+  position: absolute;
+  z-index: 100;
   top: 10px;
   bottom: 0;
   right: 2em;
