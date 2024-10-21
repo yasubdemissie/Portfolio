@@ -6,7 +6,7 @@ function Hamburger({ isOpen, onOpen }) {
   };
 
   return (
-    <div
+    <header
       className="top-3 right-3 grid space-y-[2px] h-fit w-fit bg-white lg:hidden p-1 rounded-lg cursor-pointer"
       onClick={handleClick}
     >
@@ -25,7 +25,7 @@ function Hamburger({ isOpen, onOpen }) {
           isOpen ? "-rotate-45 -translate-y-[4px] w-5" : ""
         }`}
       ></div>
-    </div>
+    </header>
   );
 }
 

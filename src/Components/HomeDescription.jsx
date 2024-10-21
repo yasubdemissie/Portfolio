@@ -6,7 +6,7 @@ function HomeDescription() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-dvw lg:w-1/2 overflow-x-hidden  px-5 space-y-8 h-fit p-4">
+    <section className="w-dvw lg:w-1/2 overflow-x-hidden  px-5 space-y-8 h-fit p-4">
       <div className="text-xl lg:text-3xl italic font-thin lg:font-bold">
         <h1 className="text-4xl lg:text-6xl text-yellow-500 text-wrap decoration-yellow-500 capitalize">
           - I am yasub demissie
@@ -27,7 +27,7 @@ function HomeDescription() {
           <HiArrowRight />
         </NavButton>
       </div>
-    </div>
+    </section>
   );
 }
 
