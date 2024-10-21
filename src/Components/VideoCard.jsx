@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function VideoCard({ children }) {
   return (
-    <div className="grid gap-x-6  rounded-2xl overflow-hidden h-fit">
+    <div className="grid gap-x-6 mx-3 lg:mx-0  rounded-2xl overflow-hidden h-fit">
       <div className="h-fit">{children}</div>
       <div className="bg-gray-600/5 h-fit">
         <h2 className="text-lg font-mono mb-2 italic">The Title of the video</h2>

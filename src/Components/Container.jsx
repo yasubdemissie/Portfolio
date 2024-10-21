@@ -7,6 +7,8 @@ import { Toaster } from "react-hot-toast";
 const StyledContainer = styled.div`
   display: grid;
   grid-template: 100dvh / auto minmax(10%, 100px);
+  margin-block: auto;
+  overflow-x: hidden;
   overflow-y: scroll;
 `;
 

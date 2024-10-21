@@ -33,18 +33,18 @@ function Form() {
     <form
       ref={form}
       onSubmit={handleSubmit(submitForm)}
-      className=" w-full px-1 mb-10 col-span-2 rounded-lg grid grid-rows-7 lg:grid-rows-5 grid-cols-2 gap-1 lg:gap-4 h-fit"
+      className="w-dvw lg:w-3/5 px-1 mb-10 mx-auto lg:pr-10 rounded-lg grid grid-rows-7 lg:grid-rows-5 grid-cols-2 gap-1 lg:gap-2"
     >
       <input
         type="text"
-        className="bg-slate-500/10  col-span-2 w-[95%] lg:col-span-1 h-8 lg:h-16 outline-0 rounded-full px-3 lg:px-10 text-md italic"
+        className="bg-slate-500/10  col-span-2 w-[95%] lg:w-[90%] lg:col-span-1 h-8 lg:h-16 outline-0 rounded-full px-3 lg:px-10 text-md italic"
         placeholder="Your name"
         name="user_name"
         {...register("user_name", { required: true })}
       />
       <input
         type="text"
-        className="bg-slate-500/10  w-[95%] col-span-2 lg:col-span-1  h-8 lg:h-16 outline-0 rounded-full px-3 lg:px-10 text-md"
+        className="bg-slate-500/10  w-[95%] lg:w-[90%] col-span-2 lg:col-span-1  h-8 lg:h-16 outline-0 rounded-full px-3 lg:px-10 text-md"
         placeholder="Your email"
         name="user_email"
         {...register("user_email", { required: true })}

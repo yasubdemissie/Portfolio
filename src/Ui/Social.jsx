@@ -36,7 +36,7 @@ function Social() {
   const navigate = useNavigate();
 
   return (
-    <div className="row-span-1 bottom-0 relative top-[27rem] lg:top-0 flex justify-center gap-x-2">
+    <div className="row-span-1 bottom-0 lg:mb-10 relative top-[27rem] lg:top-0 flex justify-center gap-x-2">
       {social.map((item) => (
         <NavButton
           key={item.name}

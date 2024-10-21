@@ -16,7 +16,7 @@ const StyledNavbar = styled.nav`
 `;
 
 function NavBar() {
-  const [isOpen, setIsOpen] = useState();
+  const [isOpen, setIsOpen] = useState(true);
   const { theme } = useProvider();
 
   return (

@@ -2,10 +2,10 @@ import VideoCard from "../Components/VideoCard";
 
 function Portifolio() {
   return (
-    <div className="grid grid-cols-3 gap-x-10 gap-y-10 mt-16 mx-24 h-fit ">
+    <div className="w-dvw flex flex-wrap justify-start lg:gap-x-10 gap-y-10 mt-16 mx-2 lg:mx-auto lg:ml-3 h-fit ">
       <VideoCard>
         <iframe
-          className="w-full h-56"
+          className="w-full lg:w-full h-56 mx-auto"
           // height="215"
           src="https://www.youtube.com/embed/jZ14165-GfU?si=ce4O_MfX4Blo24QD" // https://www.youtube.com/watch?v=HDcjKbfk5eI&t=10s
           title="YouTube video player"
@@ -14,7 +14,7 @@ function Portifolio() {
           allowfullscreen
         ></iframe>
       </VideoCard>
-      <VideoCard>
+      {/* <VideoCard>
         <iframe
           className="w-full h-56"
           // height="315"
@@ -24,7 +24,7 @@ function Portifolio() {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-      </VideoCard>
+      </VideoCard> */}
       <VideoCard>
         <iframe
           className="w-full h-56"
