@@ -24,9 +24,9 @@ function NavBar() {
       <Hamburger isOpen={isOpen} onOpen={setIsOpen} />
       {isOpen ? (
         <div
-          className={`${
-            isOpen ? " block " : "hidden"
-          } transition-all grid space-y-24 lg:block `}
+          className={` transition-all ${
+            isOpen ? " h-dvh opacity-100 " : "h-0 opacity-0"
+          } duration-1000 ease-in-out grid space-y-24 lg:block `}
         >
           <Button>{theme === "dark-theme" ? <HiMoon /> : <HiSun />}</Button>
           <NavElement />
