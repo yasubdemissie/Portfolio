@@ -25,7 +25,7 @@ function NavBar() {
       <div
         className={` transition-all duration-1000 ease-out motion-reduce:transition-none motion-reduce:hover:transform-none ${
           isOpen ? " h-dvh opacity-100 " : "h-0 opacity-0"
-        } grid space-y-16 lg:space-y-24 lg:block `}
+        } grid space-y-2 lg:block `}
       >
         <Button>{theme === "dark-theme" ? <HiMoon /> : <HiSun />}</Button>
         <NavElement isOpen={isOpen} />
