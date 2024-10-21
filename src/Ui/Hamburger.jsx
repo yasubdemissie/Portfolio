@@ -7,7 +7,7 @@ function Hamburger({ isOpen, onOpen }) {
 
   return (
     <header
-      className="top-3 right-3 grid space-y-[2px] h-fit w-fit bg-white lg:hidden p-3 rounded-lg cursor-pointer"
+      className="top-3 right-3 grid space-y-[2px] h-fit w-fit bg-white lg:hidden py-3 rounded-lg cursor-pointer"
       onClick={handleClick}
     >
       <div
