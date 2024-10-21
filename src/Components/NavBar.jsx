@@ -17,17 +17,19 @@ const StyledNavbar = styled.nav`
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(true);
-  const { theme } = useProvider();
+  const { theme, changeTheme } = useProvider();
 
   return (
     <StyledNavbar>
       <Hamburger isOpen={isOpen} onOpen={setIsOpen} />
       <div
-        className={` transition-all duration-1000 ease-out motion-reduce:transition-none motion-reduce:hover:transform-none ${
+        className={`transition-all duration-1000 ease-out motion-reduce:transition-none motion-reduce:hover:transform-none ${
           isOpen ? " h-[70%] lg:h-dvh opacity-100 " : "h-0 opacity-0"
-        } grid space-y-2 lg:block `}
+        } grid lg:block `}
       >
-        <Button>{theme === "dark-theme" ? <HiMoon /> : <HiSun />}</Button>
+        <Button onClick={changeTheme}>
+          {theme === "dark-theme" ? <HiMoon /> : <HiSun />}
+        </Button>
         <NavElement isOpen={isOpen} />
       </div>
     </StyledNavbar>

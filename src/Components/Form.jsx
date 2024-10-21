@@ -33,7 +33,7 @@ function Form() {
     <form
       ref={form}
       onSubmit={handleSubmit(submitForm)}
-      className="w-dvw lg:w-3/5 px-1 mb-10 mx-auto lg:pr-10 rounded-lg grid grid-rows-7 lg:grid-rows-5 grid-cols-2 gap-1 lg:gap-2"
+      className="w-dvw lg:w-3/5 px-1 mb-24 mx-auto lg:pr-10 rounded-lg grid grid-rows-7 lg:grid-rows-5 grid-cols-2 gap-1 lg:gap-2"
     >
       <input
         type="text"

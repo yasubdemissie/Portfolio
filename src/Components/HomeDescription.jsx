@@ -23,9 +23,9 @@ function HomeDescription() {
       <div className="py-0 pl-3 pr-0 border-[1px] w-fit rounded-full border-yellow-400">
         <span className="mx-1">More about me</span>
 
-        <NavButton activeButton={true} onClick={() => navigate("/about")}>
+        <button className="bg-yellow-500 rounded-full p-2 text-gray-900" onClick={() => navigate("/about")}>
           <HiArrowRight />
-        </NavButton>
+        </button>
       </div>
     </section>
   );

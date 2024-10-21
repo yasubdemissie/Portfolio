@@ -11,17 +11,17 @@ function Hamburger({ isOpen, onOpen }) {
       onClick={handleClick}
     >
       <div
-        className={`h-[2px] rounded-lg w-8 bg-black transition-transform duration-300 ${
+        className={`h-[2px] rounded-xl w-8 bg-black transition-transform duration-300 ${
           isOpen ? "rotate-45 translate-y-[4px] w-5" : ""
         }`}
       ></div>
       <div
-        className={`h-[2px] rounded-lg w-8 bg-black transition-opacity duration-300 ${
+        className={`h-[2px] rounded-xl w-8 bg-black transition-opacity duration-300 ${
           isOpen ? "opacity-0" : ""
         }`}
       ></div>
       <div
-        className={`h-[2px] rounded-lg w-8 bg-black transition-transform duration-300 ${
+        className={`h-[2px] rounded-xl w-8 bg-black transition-transform duration-300 ${
           isOpen ? "-rotate-45 -translate-y-[4px] w-5" : ""
         }`}
       ></div>
